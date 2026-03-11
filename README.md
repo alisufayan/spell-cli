@@ -27,7 +27,7 @@ spell appertunity
 # opportunity
 ```
 
-### From source 
+### From source (GitHub)
 
 ```bash
 git clone https://github.com/alisufayan/spell-cli.git

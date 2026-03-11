@@ -1,0 +1,23 @@
+{
+  "name": "spell-cli",
+  "version": "0.1.1",
+  "description": "Simple local spelling CLI with optional definitions and clipboard copy",
+  "bin": {
+    "spell": "bin/spell.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "start": "node bin/spell.js"
+  },
+  "keywords": [
+    "spell",
+    "spelling",
+    "cli",
+    "dictionary"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dictionary-en": "^4.0.0",
+    "nspell": "^2.1.5"
+  }
+}
