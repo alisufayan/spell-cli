@@ -18,6 +18,10 @@ All notable changes to this project will be documented in this file.
 
 - `files` field in package.json to ensure `src/` directory is included in npm packages
 
+### Changed
+
+- Dictionary definitions now show up to 2 definitions when available (instead of just the first one)
+
 ## [0.1.1] - Previous release
 
 - Initial release with basic spelling correction
