@@ -1,10 +1,14 @@
 {
   "name": "spell-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple local spelling CLI with optional definitions and clipboard copy",
   "bin": {
     "spell": "bin/spell.js"
   },
+  "files": [
+    "bin",
+    "src"
+  ],
   "type": "commonjs",
   "scripts": {
     "start": "node bin/spell.js"
