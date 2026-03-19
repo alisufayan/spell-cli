@@ -26,14 +26,16 @@ async function fetchDefinition(word) {
           continue;
         }
 
-        const first = meaning.definitions[0];
-        if (!first || typeof first.definition !== "string") {
+        const defs = meaning.definitions;
+        const selected = defs.length > 1 ? [defs[0], defs[1]] : [defs[0]];
+        const valid = selected.filter(d => d && typeof d.definition === "string");
+        if (valid.length === 0) {
           continue;
         }
 
         return {
           partOfSpeech: meaning.partOfSpeech || "unknown",
-          definition: first.definition.trim()
+          definitions: valid.map(d => d.definition.trim())
         };
       }
     }

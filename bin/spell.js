@@ -51,8 +51,9 @@ async function main() {
       }
 
       console.log(definition.partOfSpeech);
-      console.log("1.");
-      console.log(definition.definition);
+      definition.definitions.forEach((def, i) => {
+        console.log(`${i + 1}. ${def}`);
+      });
     }
   } catch (error) {
     console.error(error.message || String(error));
