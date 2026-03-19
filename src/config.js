@@ -43,7 +43,5 @@ function writeConfig(config) {
 
 module.exports = {
   readConfig,
-  writeConfig,
-  getConfigDir,
-  getConfigPath
+  writeConfig
 };

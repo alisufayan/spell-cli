@@ -128,7 +128,5 @@ function correctWord(speller, words, word) {
 
 module.exports = {
   loadSpeller,
-  correctWord,
-  findClosestWord,
-  levenshteinDistance
+  correctWord
 };

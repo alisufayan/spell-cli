@@ -2,7 +2,7 @@
 "use strict";
 
 const { parseArgs, printHelp } = require("../src/args");
-const { readConfig } = require("../src/config");
+const { readConfig, writeConfig } = require("../src/config");
 const { loadSpeller, correctWord } = require("../src/speller");
 const { copyToClipboard } = require("../src/clipboard");
 const { fetchDefinition } = require("../src/dictionary");
@@ -25,7 +25,6 @@ async function main() {
     if (parsed.action === "set-copy-default") {
       const current = readConfig();
       current.copy = parsed.value === "on";
-      const { writeConfig } = require("../src/config");
       writeConfig(current);
       console.log(`Default clipboard copy is ${parsed.value}.`);
       return;
